@@ -13,13 +13,13 @@
 import numpy as np
 import tensorflow as tf
 from sklearn.utils import shuffle
-from util_vgg import init_filter,init_weights_bias,y2ind, error_rate
+from utilities import init_filter,init_weights_bias,y2ind, error_rate
 from us_datagenerator import traindatagen , testdatagen
 import cv2
 import os
 
-good_path = "/path/to/folder/for/good_results"
-bad_path = "/path/to/folder/for/poor_results"
+good_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/good_results"
+bad_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/poor_results"
 
 def draw_img(X, Y, T,listname):# Y= prediction & T = Target
     true_positive=0

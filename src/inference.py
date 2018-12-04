@@ -1,4 +1,4 @@
-# This script deploys a trained model for performance evaluation. 
+# This script deploys a trained model for performance evaluation.
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,10 +10,10 @@ from datetime import datetime
 from utilities import IOU
 
 #We created 4 folders to document the the good and bas results and also seperate the prediction and the ground truth
-good_prediction = "/path/to/correctly_predicted_images"
-good_actual= "/ground_truth_for_good_predictions/"
-bad_prediction = "/path/forpredicted images/prediction"
-bad_actual = "/path_where/ground_truth/will_be_saved"
+good_prediction = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/correctly_predicted_images"
+good_actual= "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/good_predictions"
+bad_prediction = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/bad_prediction"
+bad_actual = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/bad_actual"
 
 def draw_img(X, Y, T,listname, threshold):# Y= prediction & T = Target
     true_positive=0
