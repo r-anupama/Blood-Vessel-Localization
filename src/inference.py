@@ -10,10 +10,10 @@ from datetime import datetime
 from utilities import IOU
 
 #We created 4 folders to document the the good and bas results and also seperate the prediction and the ground truth
-good_prediction = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/correctly_predicted_images"
-good_actual= "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/good_predictions"
-bad_prediction = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/bad_prediction"
-bad_actual = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/bad_actual"
+good_prediction = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/correctly_predicted_images"
+good_actual= "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/good_predictions"
+bad_prediction = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/bad_prediction"
+bad_actual = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/bad_actual"
 
 def draw_img(X, Y, T,listname, threshold):# Y= prediction & T = Target
     true_positive=0

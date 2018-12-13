@@ -9,8 +9,8 @@ from us_datagen import traindatagen , testdatagen
 import cv2
 import os
 
-good_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/good_results"
-bad_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/poor_results"
+good_path = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/good_results"
+bad_path = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/poor_results"
 
 def draw_img(X, Y, T,listname):# Y= prediction & T = Target
     true_positive=0
@@ -269,7 +269,7 @@ class CNN(object):
                             accuracy = (true_positive/tot_count)*100
                             acc.append(accuracy)
                             print("batch %d of 1221 cost: %d, accuracy: %d percent" %(p,c, accuracy))
-            os.chdir("/path/to/saving/models/")
+            os.chdir("/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/saving/models/")
 
             saver.save(session,"modelfinal_bn")
             plt.plot(LL, label="cost")

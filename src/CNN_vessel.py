@@ -16,10 +16,10 @@ from sklearn.utils import shuffle
 from utilities import init_filter,init_weights_bias,y2ind, error_rate
 from us_datagenerator import traindatagen , testdatagen
 import cv2
-import os
 
-good_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/good_results"
-bad_path = "/Users/rahulr/Documents/GitHub/Blood-Vessel-Localization/poor_results"
+
+good_path = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/good_results"
+bad_path = "/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/poor_results"
 
 def draw_img(X, Y, T,listname):# Y= prediction & T = Target
     true_positive=0
@@ -200,7 +200,7 @@ class CNN(object):
                 c = c/16
                 LL.append(c)
 
-                os.chdir("/path/you/want_to/save_your_trainded_model/") # We change the path to where we want the model to be stored
+                os.chdir("/Users/rahulr/Documents/ImageSegmentation/Blood-Vessel-Localization/saving/models/") # We change the path to where we want the model to be stored
                 true_positive+=draw_img(Xtest,prediction,Ytest,imlist)
                 tot_count =(p+1)*len(Xtest)
                 print(true_positive,tot_count)
